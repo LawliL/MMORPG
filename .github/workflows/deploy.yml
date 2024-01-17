@@ -13,10 +13,6 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '20' # Escolha a versão do Node.js que corresponda ao seu projeto
-    - name: Install Dependencies
-      run: npm install
-    - name: Build
-      run: npm run build
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
