@@ -10,10 +10,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    # Este passo de deploy irá pegar os arquivos como estão na branch `main`
-    # e fará o deploy no GitHub Pages.
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
-        branch: gh-pages # A branch onde o GitHub Pages irá buscar os arquivos para servir o site
-        folder: . # Isto especifica que o diretório atual (raiz da branch `main`) contém os arquivos para deploy
+        branch: gh-pages
+        folder: .
